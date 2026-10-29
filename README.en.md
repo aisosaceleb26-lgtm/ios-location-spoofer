@@ -2,6 +2,22 @@
 
 **English** · [中文](README.md)
 
+## OpenGPS (recommended for iOS 27)
+
+New open-source **OpenGPS** SwiftUI app for legitimate location **testing**: map picker, routes/GPX, in-app preview, and honest integration points for **Apple’s host-driven** developer location simulation.
+
+- Code: [`OpenGPS/`](OpenGPS/)
+- Feasibility: [`OpenGPS/docs/FEASIBILITY.md`](OpenGPS/docs/FEASIBILITY.md)
+- Feature matrix: [`OpenGPS/docs/FEATURE_MATRIX.md`](OpenGPS/docs/FEATURE_MATRIX.md)
+
+Public iOS APIs **cannot** override GNSS for unrelated apps. OpenGPS never shows “System-wide GPS spoofing active” without an external host confirmation path.
+
+---
+
+## Legacy proxy MITM modules
+
+The root of this repository still contains HTTPS MITM modules that rewrite Apple WLOC responses. That approach requires trusting a proxy CA, conflicts with OpenGPS’s privacy rules, and is reported **non-functional on iOS 27 GM** in the Chinese README.
+
 Use the HTTPS-decryption (MITM) feature of a proxy app to trick Apple's location service — and therefore Apple Maps — into placing your iPhone anywhere in the world.
 
 > 📖 **New here?** The step-by-step walkthrough is Chinese-only for now → [使用教程.md](使用教程.md) (install, configure, verify, and troubleshooting).

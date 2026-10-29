@@ -1,7 +1,22 @@
 # iOS Location Spoofer
 
 [English](README.en.md) · **中文**
+
+## OpenGPS（推荐 / iOS 27）
+
+面向开发与测试的开源 **OpenGPS** 应用（SwiftUI）：地图选点、路线 / GPX、应用内预览，以及与 **Xcode / 开发主机** 文档化模拟定位流程的对接说明。
+
+- 目录：[`OpenGPS/`](OpenGPS/)
+- 可行性与能力边界：[`OpenGPS/docs/FEASIBILITY.md`](OpenGPS/docs/FEASIBILITY.md)
+- 功能对照表：[`OpenGPS/docs/FEATURE_MATRIX.md`](OpenGPS/docs/FEATURE_MATRIX.md)
+
+> **公开 API 无法把系统 GPS 改成给所有 App 用的“全局伪装”。** OpenGPS 不会在未经验证的主机确认时显示“System-wide GPS spoofing active”。
+
+---
+
 ios27正式版已经无法使用！无法使用！无法使用！无法使用！无法使用！无法使用！无法使用！无法使用！无法使用！
+
+以下为历史 **代理 MITM / WLOC** 方案说明（需信任代理 CA，且与 OpenGPS 隐私约束冲突；iOS 27 正式版据报告已不可用）：
 
 用代理软件的 HTTPS 解密（MITM）功能，把 Apple 定位服务返回的坐标改掉，让 iPhone「以为」自己在世界任何角落——**无需越狱、无需电脑、无需开发者账号**。
 
