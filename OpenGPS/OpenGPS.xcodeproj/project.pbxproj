@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E436C5138549309D72C530 /* OpenGPSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F82D103C7C84660AB000D99 /* OpenGPSApp.swift */; };
+		ABEC854C118D4C738A6161AE /* CoordinateValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5513158C3D14D2D91E86BE3 /* CoordinateValidation.swift */; };
+		5D858BF5CE5148AD96CC69AC /* SimulationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B6CF7DD9D4A9DADB5674B /* SimulationModels.swift */; };
+		FF252B58E2B547E3AEE0B61B /* GeoMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF85B2E9144528AD681885 /* GeoMath.swift */; };
+		945E1521AD91498ABF1CD4AB /* RouteInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB470F292B2941BBBBF3F64E /* RouteInterpolator.swift */; };
+		2FFB9BD616614926833826BD /* GPXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B740198CA4B90B1D170C4 /* GPXService.swift */; };
+		AEDC4B945A81493090C8C50B /* LocationPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DDF93CA3D94B9795A14F2F /* LocationPermissionService.swift */; };
+		DDE9D1F5EF9F4BFF8164D315 /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED9B1CD22F4F9E9B40CB3F /* FavoritesStore.swift */; };
+		A6CAA636181C4A2AA87702B2 /* LocationSimulationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2479C5D6F4878BCD41952 /* LocationSimulationProvider.swift */; };
+		20344F29A01441BAB99F38B8 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD20A73CEEC4737AB377692 /* PreviewProvider.swift */; };
+		E7831E7E1D424A2EA36A8186 /* GPXRouteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CBFFEE5E4424CB5830A2F /* GPXRouteProvider.swift */; };
+		C8F29969E5834D458ED1ED29 /* AppleDeveloperSimulationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D5CA54BE94C55943A9C4B /* AppleDeveloperSimulationProvider.swift */; };
+		E961071B432D40A0B0282EA2 /* SimulationSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FEFD7BBE06480393B5B0D6 /* SimulationSessionViewModel.swift */; };
+		6FEF082A5250477E93DBBF4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE4876665A4E39BC5BFEB5 /* ContentView.swift */; };
+		4F6383C86F71414FB6BDCAB3 /* CoordinateValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55031EB25D7A40FFAC3D606C /* CoordinateValidationTests.swift */; };
+		32094110C0EE40CD91D56E32 /* GPXServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C688166F6D4C389D53C94E /* GPXServiceTests.swift */; };
+		3AA1C3D74DAF421180EB8500 /* RouteInterpolatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1396A016BE4623AB204F48 /* RouteInterpolatorTests.swift */; };
+		82320FCB9621496AA7279146 /* ProviderStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7414A2E837A486C94426B4D /* ProviderStatusTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F82D103C7C84660AB000D99 /* OpenGPSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGPSApp.swift; sourceTree = "<group>"; };
+		300D5FD779E74FDFBE93CE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5513158C3D14D2D91E86BE3 /* CoordinateValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateValidation.swift; sourceTree = "<group>"; };
+		6B3B6CF7DD9D4A9DADB5674B /* SimulationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationModels.swift; sourceTree = "<group>"; };
+		6CFF85B2E9144528AD681885 /* GeoMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMath.swift; sourceTree = "<group>"; };
+		DB470F292B2941BBBBF3F64E /* RouteInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInterpolator.swift; sourceTree = "<group>"; };
+		528B740198CA4B90B1D170C4 /* GPXService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXService.swift; sourceTree = "<group>"; };
+		A9DDF93CA3D94B9795A14F2F /* LocationPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionService.swift; sourceTree = "<group>"; };
+		82ED9B1CD22F4F9E9B40CB3F /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		40A2479C5D6F4878BCD41952 /* LocationSimulationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSimulationProvider.swift; sourceTree = "<group>"; };
+		EDD20A73CEEC4737AB377692 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		DC9CBFFEE5E4424CB5830A2F /* GPXRouteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRouteProvider.swift; sourceTree = "<group>"; };
+		700D5CA54BE94C55943A9C4B /* AppleDeveloperSimulationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleDeveloperSimulationProvider.swift; sourceTree = "<group>"; };
+		07FEFD7BBE06480393B5B0D6 /* SimulationSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSessionViewModel.swift; sourceTree = "<group>"; };
+		F0FE4876665A4E39BC5BFEB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55031EB25D7A40FFAC3D606C /* CoordinateValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateValidationTests.swift; sourceTree = "<group>"; };
+		11C688166F6D4C389D53C94E /* GPXServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXServiceTests.swift; sourceTree = "<group>"; };
+		9C1396A016BE4623AB204F48 /* RouteInterpolatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteInterpolatorTests.swift; sourceTree = "<group>"; };
+		D7414A2E837A486C94426B4D /* ProviderStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderStatusTests.swift; sourceTree = "<group>"; };
+		746BC6A7555E4C50A0606F55 /* OpenGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E5F782FAEF4D7B8228372E /* OpenGPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		241131D6C83047AAA6DFAC9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A89BA5053024BBB9B761862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D5FD0D838A4CD3A9E795A2 = {
+			isa = PBXGroup;
+			children = (
+				CA3071D52235469C967FA461 /* OpenGPS */,
+				4CB9F7029DD54523B7FAF396 /* OpenGPSTests */,
+				5DFE115666284D97BCFCD9AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DFE115666284D97BCFCD9AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				746BC6A7555E4C50A0606F55 /* OpenGPS.app */,
+				30E5F782FAEF4D7B8228372E /* OpenGPSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA3071D52235469C967FA461 /* OpenGPS */ = {
+			isa = PBXGroup;
+			children = (
+				7F82D103C7C84660AB000D99 /* OpenGPSApp.swift */,
+				300D5FD779E74FDFBE93CE3F /* Info.plist */,
+				BE2EBF02FFA04C26802E2988 /* Models */,
+				844D6E4566A24BDAA5144528 /* Utilities */,
+				916AC8B9091E430DBBCB5096 /* Services */,
+				46CF4F47563D4151979F3D3B /* Providers */,
+				24A69A95F06F4054B1E4E82D /* ViewModels */,
+				890CDE9DBA2F49948AE3C77D /* Views */,
+			);
+			path = OpenGPS;
+			sourceTree = "<group>";
+		};
+		BE2EBF02FFA04C26802E2988 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5513158C3D14D2D91E86BE3 /* CoordinateValidation.swift */,
+				6B3B6CF7DD9D4A9DADB5674B /* SimulationModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		844D6E4566A24BDAA5144528 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6CFF85B2E9144528AD681885 /* GeoMath.swift */,
+				DB470F292B2941BBBBF3F64E /* RouteInterpolator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		916AC8B9091E430DBBCB5096 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				528B740198CA4B90B1D170C4 /* GPXService.swift */,
+				A9DDF93CA3D94B9795A14F2F /* LocationPermissionService.swift */,
+				82ED9B1CD22F4F9E9B40CB3F /* FavoritesStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		46CF4F47563D4151979F3D3B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				40A2479C5D6F4878BCD41952 /* LocationSimulationProvider.swift */,
+				EDD20A73CEEC4737AB377692 /* PreviewProvider.swift */,
+				DC9CBFFEE5E4424CB5830A2F /* GPXRouteProvider.swift */,
+				700D5CA54BE94C55943A9C4B /* AppleDeveloperSimulationProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		24A69A95F06F4054B1E4E82D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				07FEFD7BBE06480393B5B0D6 /* SimulationSessionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		890CDE9DBA2F49948AE3C77D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE4876665A4E39BC5BFEB5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CB9F7029DD54523B7FAF396 /* OpenGPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				55031EB25D7A40FFAC3D606C /* CoordinateValidationTests.swift */,
+				11C688166F6D4C389D53C94E /* GPXServiceTests.swift */,
+				9C1396A016BE4623AB204F48 /* RouteInterpolatorTests.swift */,
+				D7414A2E837A486C94426B4D /* ProviderStatusTests.swift */,
+			);
+			path = OpenGPSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63C2DFCB52354264B8D4B559 /* OpenGPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3A4007DEAE4E298E950126 /* Build configuration list for PBXNativeTarget "OpenGPS" */;
+			buildPhases = (
+				A8D1D9075FF64E2E9211756C /* Sources */,
+				241131D6C83047AAA6DFAC9A /* Frameworks */,
+				9B9B9DE3B47740E4892B0513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGPS;
+			productName = OpenGPS;
+			productReference = 746BC6A7555E4C50A0606F55 /* OpenGPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0702067CCFB64BE88BA5DE4B /* OpenGPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC2F11BD21104F4BB88A299B /* Build configuration list for PBXNativeTarget "OpenGPSTests" */;
+			buildPhases = (
+				CE9B569B82B942D1ACFA8989 /* Sources */,
+				9A89BA5053024BBB9B761862 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15DD577A75043CC9BFE7E98 /* PBXTargetDependency */,
+			);
+			name = OpenGPSTests;
+			productName = OpenGPSTests;
+			productReference = 30E5F782FAEF4D7B8228372E /* OpenGPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5241A254E52744C6B9B4E943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					63C2DFCB52354264B8D4B559 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0702067CCFB64BE88BA5DE4B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 63C2DFCB52354264B8D4B559;
+					};
+				};
+			};
+			buildConfigurationList = A9B178BD8F3344A480AC248E /* Build configuration list for PBXProject "OpenGPS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D5FD0D838A4CD3A9E795A2;
+			productRefGroup = 5DFE115666284D97BCFCD9AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63C2DFCB52354264B8D4B559 /* OpenGPS */,
+				0702067CCFB64BE88BA5DE4B /* OpenGPSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B9B9DE3B47740E4892B0513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D1D9075FF64E2E9211756C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E436C5138549309D72C530 /* OpenGPSApp.swift in Sources */,
+				ABEC854C118D4C738A6161AE /* CoordinateValidation.swift in Sources */,
+				5D858BF5CE5148AD96CC69AC /* SimulationModels.swift in Sources */,
+				FF252B58E2B547E3AEE0B61B /* GeoMath.swift in Sources */,
+				945E1521AD91498ABF1CD4AB /* RouteInterpolator.swift in Sources */,
+				2FFB9BD616614926833826BD /* GPXService.swift in Sources */,
+				AEDC4B945A81493090C8C50B /* LocationPermissionService.swift in Sources */,
+				DDE9D1F5EF9F4BFF8164D315 /* FavoritesStore.swift in Sources */,
+				A6CAA636181C4A2AA87702B2 /* LocationSimulationProvider.swift in Sources */,
+				20344F29A01441BAB99F38B8 /* PreviewProvider.swift in Sources */,
+				E7831E7E1D424A2EA36A8186 /* GPXRouteProvider.swift in Sources */,
+				C8F29969E5834D458ED1ED29 /* AppleDeveloperSimulationProvider.swift in Sources */,
+				E961071B432D40A0B0282EA2 /* SimulationSessionViewModel.swift in Sources */,
+				6FEF082A5250477E93DBBF4B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B569B82B942D1ACFA8989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F6383C86F71414FB6BDCAB3 /* CoordinateValidationTests.swift in Sources */,
+				32094110C0EE40CD91D56E32 /* GPXServiceTests.swift in Sources */,
+				3AA1C3D74DAF421180EB8500 /* RouteInterpolatorTests.swift in Sources */,
+				82320FCB9621496AA7279146 /* ProviderStatusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+
+/* Begin PBXTargetDependency section */
+		B15DD577A75043CC9BFE7E98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C2DFCB52354264B8D4B559 /* OpenGPS */;
+			targetProxy = BDDD80589BC64FD686C40017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		BDDD80589BC64FD686C40017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5241A254E52744C6B9B4E943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C2DFCB52354264B8D4B559;
+			remoteInfo = OpenGPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		D0EFB84143254A26B1452B99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBF9101F9DC0466FA1B25174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7D7BD6219224A7F990A9CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OpenGPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.opengps.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		65746AB70F3443669D8A31B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OpenGPS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.opengps.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		784B81EE4DE14D48BBDCE9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.opengps.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGPS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenGPS";
+			};
+			name = Debug;
+		};
+		7A97C2F92BEB4FF8BE6ECCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.opengps.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGPS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenGPS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B178BD8F3344A480AC248E /* Build configuration list for PBXProject "OpenGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EFB84143254A26B1452B99 /* Debug */,
+				FBF9101F9DC0466FA1B25174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF3A4007DEAE4E298E950126 /* Build configuration list for PBXNativeTarget "OpenGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D7BD6219224A7F990A9CA3 /* Debug */,
+				65746AB70F3443669D8A31B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC2F11BD21104F4BB88A299B /* Build configuration list for PBXNativeTarget "OpenGPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784B81EE4DE14D48BBDCE9D4 /* Debug */,
+				7A97C2F92BEB4FF8BE6ECCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5241A254E52744C6B9B4E943 /* Project object */;
+}

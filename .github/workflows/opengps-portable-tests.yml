@@ -1,0 +1,19 @@
+name: OpenGPS portable tests
+on:
+  push:
+    paths:
+      - 'OpenGPS/**'
+      - '.github/workflows/opengps-portable-tests.yml'
+  pull_request:
+    paths:
+      - 'OpenGPS/**'
+jobs:
+  portable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run portable core tests
+        run: node --test OpenGPS/tests/portable-core.test.mjs
